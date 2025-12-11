@@ -7,7 +7,7 @@ text { font-family: Segoe UI, sans-serif; fill: #70a5fd; font-size: 14px; }
 </style>
 
 <rect width="495" height="150" rx="15" fill="#1a1b27"/>
-<text x="20" y="35" class="header">GitHub Stats (Tokyonight)</text>
+<text x="20" y="35" class="header">GitHub Stats</text>
 
 <text x="20" y="70" class="label">Public Repos:</text>
 <text x="200" y="70" class="value">33</text>
