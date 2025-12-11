@@ -1,1 +1,25 @@
 
+<svg width="495" height="180" viewBox="0 0 495 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+text { font-family: Segoe UI, sans-serif; fill: #70a5fd; font-size: 14px; }
+.header { font-size: 20px; fill: #c792ea; font-weight: bold; }
+.lang { fill: #89ddff; }
+.percent { fill: #ffffff; font-weight: bold; }
+</style>
+
+<rect width="495" height="180" rx="15" fill="#1a1b27"/>
+<text x="20" y="35" class="header">Top Languages (Tokyonight)</text>
+
+<text x="20" y="75" class="lang">C#</text>
+<text x="200" y="75" class="percent">42%</text>
+
+<text x="20" y="105" class="lang">TypeScript</text>
+<text x="200" y="105" class="percent">28%</text>
+
+<text x="20" y="135" class="lang">JavaScript</text>
+<text x="200" y="135" class="percent">18%</text>
+
+<text x="20" y="165" class="lang">HTML/CSS</text>
+<text x="200" y="165" class="percent">12%</text>
+
+</svg>
