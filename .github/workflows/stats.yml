@@ -1,0 +1,57 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"  # updates every 12 hours
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate GitHub Stats (Overview)
+        uses: anuraghazra/github-readme-stats@latest
+        with:
+          username: PiyushKumar495
+          hide_border: true
+          theme: tokyonight
+          repo: github-stats
+          filename: generated/overview.svg
+
+      - name: Generate Top Languages
+        uses: anuraghazra/github-readme-stats@latest
+        with:
+          username: PiyushKumar495
+          hide_border: true
+          theme: tokyonight
+          repo: github-stats
+          filename: generated/languages.svg
+          layout: compact
+
+      - name: Generate Streak Stats
+        uses: DenverCoder1/github-readme-streak-stats@latest
+        with:
+          user: PiyushKumar495
+          theme: tokyonight
+          hide_border: true
+          file: generated/streak.svg
+
+      - name: Generate GitHub Trophies
+        uses: ryo-ma/github-profile-trophy@latest
+        with:
+          username: PiyushKumar495
+          theme: tokyonight
+          no-frame: true
+          file: generated/trophies.svg
+
+      - name: Commit Changes
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add .
+          git commit -m "Updated stats" || echo "No changes"
+          git push
