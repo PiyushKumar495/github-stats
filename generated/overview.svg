@@ -1,1 +1,22 @@
+<svg width="495" height="150" viewBox="0 0 495 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+text { font-family: Segoe UI, sans-serif; fill: #70a5fd; font-size: 14px; }
+.header { font-size: 20px; fill: #c792ea; font-weight: bold; }
+.label { fill: #89ddff; }
+.value { fill: #ffffff; font-weight: bold; }
+</style>
+
+<rect width="495" height="150" rx="15" fill="#1a1b27"/>
+<text x="20" y="35" class="header">GitHub Stats (Tokyonight)</text>
+
+<text x="20" y="70" class="label">Public Repos:</text>
+<text x="200" y="70" class="value">33</text>
+
+<text x="20" y="95" class="label">Total Stars:</text>
+<text x="200" y="95" class="value">12</text>
+
+<text x="20" y="120" class="label">Followers:</text>
+<text x="200" y="120" class="value">3</text>
+
+</svg>
 
